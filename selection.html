@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Selection Sort</h2>
+
+<p>click here to check sorted array</p>
+
+<button onclick="myFunction()">click here</button>
+
+<p id="sort"></p>
+
+<script>
+var points = [5, 2, 4, 6, 1, 3];
+document.getElementById("sort").innerHTML = points;
+
+function myFunction() {
+  points.sort(function(a, b){return b- a});
+  document.getElementById("sort").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
